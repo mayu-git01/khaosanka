@@ -1,0 +1,749 @@
+*{
+  box-sizing: border-box;
+  font-family: sans-serif;
+  border: none;
+  color: #060607;
+  /* color: #333333; */
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+
+.wrapper{
+  width: 100%;
+}
+
+.header{
+  width: 100%;
+  height: 11em;
+  /* border: 1px solid black; */
+  background-color: #FC4802;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header img{
+  height: 150px;
+  margin-left: 5%;
+}
+
+.header img{
+  animation: fuwafuwa 3s infinite ease-in-out .8s alternate;
+  background: url(../img/ico-apple.svg) no-repeat center center / 60px auto;
+  display: inline-block;
+  transition: 1.5s ease-in-out;
+  margin-top: 15px;
+}
+ 
+@keyframes fuwafuwa {
+  0% {
+    transform:translate(0, 0) rotate(-7deg);
+  }
+  50% {
+    transform:translate(0, -7px) rotate(0deg);
+  }
+  100% {
+    transform:translate(0, 0) rotate(7deg);
+  }
+}
+.header h1{
+  color: white;
+  font-size: 2em;
+  margin:0 auto;
+  margin-top: 1em;
+}
+
+.mobile{
+  display: none;
+}
+
+.header h1 span{
+  color: white;
+  font-size: 1.8em;
+  font-weight: 800;
+  text-shadow:  gray;
+}
+
+.header h1,.header h1 span:hover{
+  /* border-bottom: 2px double #707070; */
+  background: -webkit-linear-gradient( 60deg,#50F205,#FCACAA,#80FCFE,#FCC802);
+  background-size:400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textAnime 10s infinite; 
+}
+ @keyframes textAnime{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+.order{
+  margin-top: 1em;
+  margin-right: 1.2em;
+  margin-bottom: 1em;
+}
+
+.order-text p{
+  color: white;
+  font-size: 1.2em;
+}
+
+.order-text .tel{
+  color: #FCC802;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px gray;
+}
+
+.order-text .tel:hover{
+  color: #ffffff;
+}
+
+.icon .fab{
+  /* color: #50F205; */
+  color: #80FCFE;
+  text-decoration: none;
+}
+
+.fab:hover{
+  color: white;
+}
+
+.fa-facebook-square{
+  margin-right: 0.3em;
+}
+
+.menu{
+  /* border: 1px solid black; */
+  position: relative;
+  display: block;
+  margin-top: 11em;
+  /* margin-right: 0; */
+  width: 100%;
+  height: auto;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../../images/menu-backop35.jpg);
+}
+.menu .mobile2{
+  display: none;
+}
+.menu h2{
+  color: #FC4802;
+  font-size: 3.5em;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1.2em;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-shadow: 2px 2px 2px gray;
+
+}
+
+.menu-item{
+  display: flex;
+  justify-content: center;
+}
+
+.menu-1{
+  margin-right: 4em;
+}
+
+.menu-1 h3{
+  color: #50F205;
+  font-size: 3em;
+  font-weight: 600;
+  text-shadow: 4px 4px 4px #FC4802;
+  text-align: center;
+  margin-bottom: 0.3em;
+  letter-spacing: 0.1em;
+}
+
+.menu-1 p{
+  font-size: 2em;
+  font-weight: 600;
+  text-align: right;
+}
+
+.menu-2 h3{
+  color: #FCC802;
+  font-size: 3em;
+  font-weight: 600;
+  text-shadow: 4px 4px 4px #FC4802;
+  text-align: center;
+  margin-bottom: 0.3em;
+  letter-spacing: 0.1em;
+}
+
+.menu-2 p{
+  font-size: 2em;
+  font-weight: 600;
+  text-align: right;
+}
+
+.campaign{
+  width: 100%;
+  background-color: #FCC802;
+  text-align: center;
+  padding: 5em;
+}
+
+.campaign h2{
+  color: #FC4802;
+  font-size: 4em;
+  font-weight: 800;
+  margin-bottom: 0.3em;
+}
+
+.campaign h3{
+  color: #ffffff;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.cp,.campaign h3 span:hover{
+  /* border-bottom: 2px double #707070; */
+  background: -webkit-linear-gradient( 60deg,#50F205,#FC4802,#80FCFE,#F808F7);
+  background-size:400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textAnime 20s infinite; 
+}
+ @keyframes textAnime{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.campaign span{
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 600;
+  /* border-bottom: 3px solid #ffffff; */
+}
+
+.campaign .price{
+  color: #FC4802;
+  font-size: 4em;
+  font-weight: 800;
+  margin-top: 0.3em;
+  margin-bottom: 0.2em;
+}
+
+.campaign p{
+  font-size: 1.5em;
+}
+
+.how-to{
+  width: 100%;
+  background-color: #FC4802;
+  padding: 4em;
+  position: relative;
+}
+
+.how-to h2{
+  color: white;
+  font-size: 3em;
+  font-weight: 800;
+  text-align: center;
+}
+
+.how-to-sns{
+  text-align: center;
+}
+.how-to-sns p{
+  /* border: 1px solid #FCC802; */
+  color: #ffffff;
+  font-size: 1.8em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.how-to-sns a{
+  text-decoration: none;
+  border: 1px solid #FCC802;
+  padding: 1em 1.5em;
+  background-color: #FCC802;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+  border-radius: 1em;
+  margin: 0 1em;
+}
+
+.how-to-sns .fab::before {
+  color: #FC4802;
+  display: inline-block;
+  margin-right: .5em;
+  font-family: fontawesome;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.how-to-sns a:hover{
+  background-color: #ffffff;
+  color: #060607;
+}
+
+.how-to-tel p{
+  /* border: 1px solid #FCC802; */
+  color: #ffffff;
+  font-size: 1.8em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  text-align: center;
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+}
+
+.how-to-tel .telnum{
+  color: #060607;
+  border: 1px solid #FCC802;
+  padding: 1em;
+  background-color: #FCC802;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 600;
+  border-radius: 1em;
+  width: 15em;
+  margin: 0 auto;
+}
+
+.telnum:hover{
+  background-color: #ffffff;
+}
+
+.how-to-rule{
+  margin: 3em;
+  font-size: 1.5em;
+}
+
+.how-to-rule p {
+  color: #ffffff;
+  margin-bottom: 0.5em;
+}
+
+.how-to-rule li{
+  color: #ffffff;
+  margin-left: 1.5em;
+}
+
+.how-to-menu{
+  margin: 3em;
+  font-size: 1.5em;
+}
+
+.how-to-menu p {
+  color: #ffffff;
+  margin-bottom: 0.5em;
+}
+
+.how-to-menu li{
+  color: #ffffff;
+  margin-left: 1.5em;
+}
+
+.how-to-price{
+  margin: 3em;
+  font-size: 1.5em;
+}
+
+.how-to-price p {
+  color: #ffffff;
+  margin-bottom: 0.5em;
+  line-height: 1em;
+}
+
+.price-text{
+  color: #ffffff;
+  margin-left: 1em;
+}
+.how-to img{
+  width: 25%;
+  /* float: right; */
+  position: absolute;
+  /* height: 50%; */
+  right: 10em;
+  bottom: 18em;
+}
+
+.footer{
+  background-color: #FCC802;
+  text-align: center;
+  padding: 2em;
+  line-height: 2.2em;
+  letter-spacing: 0.2em;
+}
+
+.footer p{
+  font-size: 1.2em;
+  font-weight: 600;
+  
+}
+
+.footer span{
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+/* small laptop */
+@media(max-width:1200px){
+  .warapper{
+    width: 100%;
+  } 
+
+  .header{
+    width: 100%;
+  }
+  .header img{
+    height: 150px;
+    margin-left: 5%;
+  }
+
+  .header h1{
+    font-size: 1.3em;
+    margin-top: 2em;
+  }
+  
+  .header h1 span{
+    font-size: 1.8em;
+    /* margin-right: 2em; */
+  }
+
+  
+
+  .header.order{
+    margin-top: 1.3em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+  
+  .order-text p{
+    font-size: 1em;
+  }
+  
+  .order-text .tel{
+    font-size: 1.3em;
+    margin-top: 0.5em;
+  }
+
+  .menu-1{
+    margin-right: 0.8em;
+  }
+
+  .how-to img{
+    right: 5em;
+    bottom: 18em;
+  }
+}
+
+/* responsive display tablet*/
+@media screen and (max-width: 768px){
+  .warapper{
+    width: 100%;
+  }
+
+  
+  .header img{
+    width: 24%;
+    height: auto;
+    margin-top: 3%;
+    margin-left: 1%;
+  }
+
+  .header h1{
+    position: absolute;
+    left: 25%;
+    top: 1em;
+    margin-top: 0.5em;
+    font-size: 1.5em;
+    
+  }
+
+  .lap{
+    display: none;
+  }
+
+  .mobile{
+    /* border: 1px solid blue; */
+    display: initial;
+    width: 70%;
+    
+  }
+
+  .order{
+    /* display: flex; */
+    position: absolute;
+    right: 1em;
+    top: 0.1em;
+    /* float: right; */
+  }
+
+  .menu h2{
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+  }
+
+  .menu-1{
+    width: 45%;
+    /* border: 1px solid black; */
+  }
+
+  .menu-1 h3{
+    
+    color: #50F205;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-shadow: 4px 4px 4px #FC4802;
+    text-align: center;
+    margin-bottom: 0.3em;
+    letter-spacing: 0.1em;
+  }
+
+  .menu-1 img{
+    width: 100%;
+  }
+  
+  .menu-1 p{
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: right;
+  }
+
+  .menu-2{
+    width: 45%;
+  }
+
+  .menu-2 h3{
+    color: #FCC802;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-shadow: 4px 4px 4px #FC4802;
+    text-align: center;
+    margin-bottom: 0.3em;
+    letter-spacing: 0.1em;
+  }
+
+  .menu-2 img{
+    width: 100%;
+  }
+  
+  .menu-2 p{
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: right;
+  }
+
+  .campaign{
+    padding: 1em;
+  }
+  
+  .campaign .price{
+    font-size: 3.5em;
+  }
+
+  .how-to{
+    padding: 0.5em;
+  }
+
+  .how-to-tel .telnum{
+    font-size: 1.5em;
+    font-weight: 600;
+    width: 13em;
+    margin: 0 auto;
+  }
+
+  .how-to img{
+    right: 3em;
+    bottom: 13em;
+  }
+}
+
+/* responsive display mobile*/
+@media screen and (max-width: 600px){
+  .header{
+    height: 20em;
+    position: relative;
+  }
+
+  .header img{
+    width: 35%;
+    height: auto;
+    margin-top: 7%;
+  }
+
+  .header h1{
+    font-size: 1.3em;
+    left: 35%;
+  }
+
+  .header h1 span{
+    font-size: 1.6em;
+  }
+
+  .order{
+    /* display: flex; */
+    position: absolute;
+    /* margin: 0 auto; */
+    top: 7em;
+    left: 25%;
+  }
+
+  .order p{
+    font-size: 0.9em;
+  }
+
+  .menu{
+    margin-top: 0;
+  }
+
+  .menu .lap2{
+    display: none;
+  }
+
+  .menu .mobile2{
+    display: inherit;
+    text-align: center;
+  }
+
+  .menu h2{
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin-bottom: 0.5em;
+  }
+
+  .menu-1 h3{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 0.3em;
+    letter-spacing: 0;
+    text-shadow: 1px 1px 4px gray;
+  }
+
+  .menu-2 h3{
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 0.3em;
+    letter-spacing: 0;
+    text-shadow: 1px 1px 4px gray;
+  }
+
+  .menu-1 p,.menu-2 p{
+    font-size: 1em;
+  }
+
+  .campaign{
+    width: 100%;
+    padding: 1em 0.1em;
+
+  }
+  
+  .campaign h2{
+    font-size: 1.8em;
+    font-weight: 800;
+    margin-bottom: 0.3em;
+  }
+  
+  .campaign h3{
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  
+  .campaign span{
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+
+  .campaign .price{
+    font-size: 1.8em;
+    font-weight: 800;
+    margin-top: 0.3em;
+    margin-bottom: 0.2em;
+  }
+  
+  .campaign p{
+    font-size: 0.8em;
+  }
+
+  .how-to{
+    padding: 1em 0;
+  }
+  
+  .how-to h2{
+    font-size: 2em;
+  }
+  
+  .how-to-sns .facebook{
+    margin-bottom: 1em;
+  }
+
+  .how-to-sns p{
+    /* border: 1px solid #FCC802; */
+    font-size: 1.1em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+  
+  .how-to-sns a{
+    padding: 0.8em 1.2em;
+    margin: 0 1em;
+  }
+  
+  .how-to-tel p{
+    /* border: 1px solid #FCC802; */
+    font-size: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .how-to-tel .telnum{
+    padding: 0.8em 0.2em;
+    font-size: 1.3em;
+  }
+  
+  .how-to-rule{
+    margin: 1.5em 0.5em;
+    /* border: 1px solid black; */
+    font-size: 1em;
+  }
+  
+  .how-to-menu{
+    margin: 1.5em 0.5em;
+    font-size: 1em;
+  }
+
+  .how-to-price{
+    margin: 1.5em 0.5em;
+    font-size: 1em;
+  }
+  
+  .how-to-price p {
+    color: #ffffff;
+    margin-bottom: 0.5em;
+    line-height: 1em;
+  }
+  
+  .price-text{
+    color: #ffffff;
+    margin-left: 1em;
+  }
+  .how-to img{
+    display: none;
+  }
+
+  .footer{
+    padding: 2em;
+    line-height: 2em;
+    letter-spacing: 0;
+  }
+}
