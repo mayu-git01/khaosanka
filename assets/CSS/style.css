@@ -193,6 +193,7 @@
   background-color: #FCC802;
   text-align: center;
   padding: 5em;
+  display: none;
 }
 
 .campaign h2{
